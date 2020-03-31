@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wt">
+        <ul class="ul">
+            <li>
+                <img src="https://img.youpin.mi-img.com/shopmain/bf6790b146cb88e957f465835562e4cb.png@base@tag=imgScale&F=webp&h=800&w=800?w=800&h=800"
+                    alt="">
+            </li>
+        </ul>
+        <p>hello
+        </p>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+        $('.wt').on('click', 'li', function (event) {
+            var target = $(event.target);
+            if (target = 'UL') {
+                alert(123);
+            }
+            console.log($(this))
+        })
+
+
+
+
+        // $.ajax({
+        //     url: 'http://localhost/PHP/project/php/shuzhu.php',
+        //     dataType: 'json'
+
+        // }).done(function (d) {
+        //     console.log(d)
+        //     let arr = d[0].arr.split(',');
+        //     console.log(arr);
+        //     let html = '';
+        //     $.each(d, function (index, value) {
+        //         let Arr = value.arr.split(',');
+        //         for (let i = 0; i < Arr.length; i++) {
+        //             html += `
+        //         <li>
+        //             <img src="${Arr[i]}" alt="">
+        //         </li>
+        //         `
+        //         }
+        //         console.log(value.arr.length);
+
+        //     })
+        //     $("ul").append(html);
+        // })
+    </script>
+</body>
+
+</html>

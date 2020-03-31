@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width, initial-scale=1"><title>Document</title><link rel=stylesheet href=http://at.alicdn.com/t/font_1599602_cb05mxffi2.css><link rel=stylesheet href=../css/reset.css><link rel=stylesheet href=../css/index_xiaomi.css></head><body style="background-color: #f2f2f2;"><header class=head_index><div class="w cl"><ul><li class=mr_hear><a href=register.html>登入</a></li><li class=mr_hear><a href=login.html>注册</a></li><li class=cg_hear><a href=javascript:; id=login_cg></a></li><li class=cg_hear><a href=javascript:; id=tuichu>退出</a></li><li>|</li><li>帮助中心</li><li><i class="iconfont icon-shouji"></i>下载APP</li><li>|</li><li class=xieyi_index><a href=#>资质证照 / 协议规则<i class="iconfont icon-jiantou-xia"></i></a></li></ul></div></header><div class=yp_index><div class="w cl"><p class=xm_index></p><p class=time_index>限时抢购</p><div class=input_index><i class="iconfont icon-fangdajing"></i> <input type=text placeholder=搜一搜></div><a href=# class="iconfont icon-gouwuche1"></a></div></div><div class=boost><div class=w><button class=mBtn type=submit>默认排序</button> <button class=sBtn type=submit>升序排序</button></div></div><nav class=nav_pl><div class=w><h3>榜单销量</h3><ul class=cl></ul></div></nav><div class=pagelist><div class="m-style page"></div></div><div class=yc_index><ul><li><i class="iconfont icon-erji"></i><p>联系客服</p></li><li><i class="iconfont icon-scan"></i><p>下载APP</p></li><li><i class="iconfont icon-libao"></i><p>新人有礼</p></li><li><i class="iconfont icon-weixin"></i><p>关注微信</p></li><li class=db_index><i class="iconfont icon-huojian"></i><p>回到顶部</p></li></ul></div><footer class=foot_index><div class=w><div class=zuo_index><img src=https://shop.io.mi-img.com/static/h5/static3/media/logo@2x.cf8cc6a8.png></div><div class=mian_index><p class=sg_index><span>©xiaomiyoupin.com</span> <span>苏B2-20180351 苏ICP备18025642号-1</span> <img src=https://shop.io.mi-img.com/static/h5/static3/media/record-icon.d0289dc0.png> <span class=sp>苏公网安备 32010502010244号</span></p><p class=qy_index><span>企业名称：有品信息科技有限公司</span> <span>关于我们</span> <span>入驻有品</span></p><p><span>小米有品平台运营主体变更公告</span></p><p><span>南京市建邺区白龙江东街8号3栋9层</span></p></div><div class=you_index><img src=https://shop.io.mi-img.com/static/h5/static3/media/f-logo.c6285587.png></div></div></footer></body><script src=https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js></script><script src=../js/list_xiao.js></script><script>
+
+
+    // let arr_default = [];//排序前的数组
+    // let arr = []; //排序中的数组
+    // let prev = null;
+    // let next = null;
+    // $.ajax({
+    //     type: 'post',
+    //     dataType: 'json',
+    //     url: 'http://localhost/PHP/project/php/xiangqing.php'
+    // }).done(function (d) {
+    //     let html = '';
+    //     $.each(d, function (index, value) {
+    //         html += `
+    //         <li>
+    //             <a href="particulars.html?sid=${value.sid}">
+    //                 <div><img src="${value.url}" alt=""></div>
+    //                 <p class="nav_first sl">${value.title}</p>
+    //                 <p class="nav_middle sl">${value.explain}</p>
+    //                 <p class="nav_finally">
+    //                     ${value.price}</p>    
+    //             </a>
+    //         </li>
+    //         `
+    //     });
+    //     $('.nav_pl ul').append(html); 
+    //     let arr_default = [];//排序前的数组
+    //     let arr = []; //排序中的数组
+    //     let prev = null;
+    //     let next = null;
+    //     $('.nav_pl li').each(function (index, ele) {
+    //         arr[index] = $(this);
+    //         arr_default[index] = $(this);
+    //     });
+    //     // console.log(arr_default)
+    //     //排序  -- 冒泡排序
+    //     $('.mBtn').on('click', function () {//默认的排序
+    //         alert(123)
+
+    //         $.each(arr_default, function (index, value) {
+    //             $('.nav_pl ul').append(value);
+    //         });
+    //     });
+
+    //     //冒泡排序
+    //     $('.sBtn').on('click', function () {
+
+    //         for (let i = 0; i < arr.length - 1; i++) {
+    //             for (let j = 0; j < arr.length - i - 1; j++) {
+    //                 prev = parseFloat(arr[j].find('.nav_finally').html());
+    //                 next = parseFloat(arr[j + 1].find('.nav_finally').html());
+    //                 if (prev > next) {
+    //                     let t = arr[j];
+    //                     arr[j] = arr[j + 1];
+    //                     arr[j + 1] = t;
+    //                 }
+    //             }
+    //         }
+    //         console.log(prev)
+    //         $('.nav_pl ul').empty();//清空原来的列表
+    //         $.each(arr, function (index, value) {
+    //             $('.nav_pl ul').append(value);
+    //         })
+    //     });
+
+    // });
+
+
+
+
+
+
+</script></html>
