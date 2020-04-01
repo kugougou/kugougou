@@ -74,7 +74,9 @@
 ; !function () {
     $.ajax({
         type: 'post',
-        url: 'http://localhost/PHP/project/php/xiaomi.php',
+        url: `http://${location.hostname}/PHP/project/php/xiaomi.php`,
+        // url: `http://${location.hostname}/php/xiaomi.php`,
+
         dataType: 'json'
     }).done(function (data) {//图片懒加载
         console.log(data);
@@ -143,7 +145,9 @@
     //专属推荐
     $.ajax({
         type: 'post',
-        url: 'http://localhost/PHP/project/php/zhuanshu.php',
+        url: `http://${location.hostname}/PHP/project/php/zhuanshu.php`,
+        // url: `http://${location.hostname}/php/zhuanshu.php`,
+
         dataType: 'json',
     }).done(function (data) {
         let html = '';
@@ -176,7 +180,9 @@
     $.ajax({
         type: 'post',
         dataType: 'json',
-        url: 'http://localhost/PHP/project/php/tuijian.php'
+        // url: `http://${location.hostname}/php/tuijian.php`
+        url: `http://${location.hostname}/PHP/project/php/tuijian.php`,
+
     }).done(function (d) {
         let html = '';
         console.log(444)
@@ -219,7 +225,7 @@
 
     //跳转到列表页
     $('.lb_index ul li').on('click', function () {
-        location.href = 'list_xiao.html'
+        location.href = './src/html/list_xiao.html'
     })
 
 

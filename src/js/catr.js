@@ -3,7 +3,8 @@
     // 获取全部的接口数据 判断取值
     function randererList(sid, num) {
         $.ajax({
-            url: 'http://localhost/PHP/project/php/xiangqing.php',
+            url: `http://${location.hostname}/PHP/project/php/xiangqing.php`,
+            // url: `http://${location.hostname}/php/xiangqing.php`,
             dataType: 'json'
         }).done(function (d) {
             let html = '';

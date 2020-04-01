@@ -6,7 +6,9 @@
     $.ajax({
         type: 'post',
         dataType: 'json',
-        url: 'http://localhost/PHP/project/php/xiangqing.php'
+        url: `http://${location.hostname}/PHP/project/php/xiangqing.php`
+        // url: `http://${location.hostname}/php/xiangqing.php`
+
     }).done(function (d) {
         let html = '';
         $.each(d, function (index, value) {

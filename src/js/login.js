@@ -10,7 +10,9 @@
     //用户失去焦点
     $user.on('blur', function () {
         $.ajax({
-            url: 'http://localhost/PHP/project/php/res.php',
+            url: `http://${location.hostname}/PHP/project/php/res.php`,
+            // url: `http://${location.hostname}/php/res.php`,
+
             data: {
                 xingming: $user.val()
             },
@@ -50,6 +52,7 @@
     $pass.on('focus', function () {
         $passSpan.html('请输入字母和数字6-18位');
         $passSpan.css('color', '#333');
+        $pass.val('');
     });
     //密码文本改变
     $pass.on('input', function () {
@@ -93,9 +96,10 @@
                     $passSpan.css('color', 'green');
                     btn = true;
                 } else {
+                    // alert(123)
                     $passSpan.html('密码输入错误请重新输入');
                     $passSpan.css('color', 'red');
-                    $pass.val('')
+                    // $pass.val('');
                     btn = false;
                 }
             } else {
@@ -137,7 +141,9 @@
     authCode();
     yzmSpan.on('click', function () {
         authCode();
+        yzmSpan.css('color', '#333');
     });
+    //失去焦点
     vCode.on('blur', function () {
         // console.log(yzmSpan.html());
         // console.log(444);
@@ -149,15 +155,14 @@
             } else {
                 yzmSpan.html('验证码错误');
                 yzmSpan.css('color', 'red');
-                vCode.val('');
                 btn = false;
             }
-        } else {
-            yzmSpan.html('验证码不能为空');
-            yzmSpan.css('color', 'red');
-            vCode.val('')
-            btn = false;
-        }
+        } 
+        // else {
+        //     yzmSpan.html('验证码不能为空');
+        //     yzmSpan.css('color', 'red');
+        //     btn = false;
+        // }
     });
     vCode.on('focus', function () {
         if (yzmSpan.html() === '验证码错误') {

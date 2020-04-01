@@ -8,7 +8,8 @@
     }
     //根据传来的sid给后端查找相应的图
     $.ajax({
-        url: 'http://localhost/PHP/project/php/getsid.php',
+        url: `http://${location.hostname}/PHP/project/php/getsid.php`,
+        // url: `http://${location.hostname}/php/getsid.php`,
         data: {
             sid: $sid
         },
@@ -166,7 +167,9 @@
         if (jscookie.get('user') == undefined) {//并没有用户登入
 
             if (window.confirm('你确定去登入?')) {
-                location.href = 'http://localhost/PHP/project/src/html/register.html'
+                location.href = `http://${location.hostname}/PHP/project/src/html/register.html`
+                // location.href = `http://${location.hostname}/src/html/register.html`
+
             }
 
             return;

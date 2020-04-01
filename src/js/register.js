@@ -4,7 +4,8 @@
         let $passWord = $('.pass_reg');
         if ($userName.val() !== '' && $passWord.val() !== '') {
             $.ajax({
-                url: 'http://localhost/PHP/project/php/login.php',
+                url: `http://${location.hostname}/PHP/project/php/login.php`,
+                // url: `http://${location.hostname}/php/login.php`,
                 type: 'post',
                 data: {
                     username: $userName.val(),
@@ -12,7 +13,7 @@
                 }
             }).done(function (d) {
                 if (d) { // 存在
-                    location.href = 'xiaomi_index.html';
+                    location.href = '../../index.html';
                     jscookie.add('user', $userName.val(), 7)
                 } else {
                     $userName.val('用户或者密码错误，请重新输入')
